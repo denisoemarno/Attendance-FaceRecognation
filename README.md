@@ -1,17 +1,9 @@
 # face-attendance-web-app-react-python
-
-<p align="center">
-<a href="https://www.youtube.com/watch?v=yWmW5uEtNws">
-    <img width="600" src="https://utils-computervisiondeveloper.s3.amazonaws.com/thumbnails/with_play_button/face_attendance_web_app_react_python.jpg" alt="Watch the video">
-    </br>Watch on YouTube: Face attendance + face recognition web app with React and Python !
-</a>
-</p>
-
 ## deployment
 
 ### backend
 
-#### setup server
+#### setup server AWS
 
 Log into your AWS account and launch a t2.2xlarge EC2 instance, using the latest stable Ubuntu image.
 
@@ -73,13 +65,48 @@ Install Python 3.8, create a virtual environment and install requirements.
 Launch app.
 
     python3 -m uvicorn main:app
+
+### Local Environment 
+### Backend
+    install python 3.9
+    install python3-virtualenv
+
+    cd backend
+
+    virtualenv venv --python=python3.8
+
+    source venv/bin/activate
+    
+    pip install cmake==3.25.0
+
+    pip install -r requirements.txt
+
+    Launch app.
+
+    python3 -m uvicorn main:app
+
+### Launch App Front End
+ 
+    git clone https://github.com/computervisiondeveloper/face-attendance-web-app-react-python.git
+   
+    cd face-attendance-web-app-react-python
+    
+    cd frontend/face-attendance-web-app-front/
+    
+    sudo apt-get install npm
+    
+    npm install
+    
+    npm start
+
+
     
     
 ### frontend
 
 You can host the frontend locally (localhost) or on a server. These are instructions in case you decide to do it on a server.
 
-#### setup server
+#### setup server AWS
 
 The process is similar as in the previous case.
   
