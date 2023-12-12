@@ -70,6 +70,9 @@ Launch app.
 ### Backend
     install python 3.9
     install python3-virtualenv
+    git clone https://github.com/computervisiondeveloper/face-attendance-web-app-react-python.git
+
+    cd face-attendance-web-app-react-python
 
     cd backend
 
